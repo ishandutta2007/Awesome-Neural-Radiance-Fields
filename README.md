@@ -2,6 +2,11 @@
 
 # Awesome-Neural-Radiance-Fields
 
+<div align="center">
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</div>
+
+
 ## Neural Radiance Fields: History, Progression, Variants, & Applications
 
 **Neural Radiance Fields (NeRF)** represent a foundational paradigm shift in computer vision, computer graphics, and neural 3D scene representation. Formally introduced by Mildenhall et al. (UC Berkeley, Google Research, UC San Diego) in 2020 ("NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"), NeRF established a revolutionary method for mapping continuous 3D environments into the weights of a neural network.
@@ -87,6 +92,18 @@ Deploying NeRF pipelines within industrial pipelines exposes severe hardware bot
 | [**Autonomous Vehicle Simulation**](pages/autonomous_vehicles.md) | Recreates real-world road networks to simulate edge-case driving conditions and lighting changes. | 2022 | [Block-NeRF](https://arxiv.org/abs/2202.05263) |
 
 ---
+
+
+## ⭐ Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007/Awesome-Neural-Radiance-Fields&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Radiance-Fields&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Radiance-Fields&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Radiance-Fields&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
 
 ## References
 
