@@ -10,7 +10,7 @@ Prior to NeRF, 3D reconstruction relied on explicit, discrete geometric represen
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 📅 1. The Macro Chronological Evolution
 
 The implementation of neural view synthesis has transitioned from slow, coordinate-based continuous MLPs to hybrid sparse data structures, paving the way for explicit Gaussian rasterization primitives.
 
@@ -35,7 +35,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Mathematical Primitives
+## 🧠 2. Core Functional & Mathematical Primitives
 
 The core architecture of a Neural Radiance Field maps spatial rays using continuous positional mapping combined with volumetric rendering integrals.
 
@@ -46,7 +46,7 @@ The core architecture of a Neural Radiance Field maps spatial rays using continu
 
 ---
 
-## 3. High-Capacity Architectural & Scaling Classes
+## 🏗️ 3. High-Capacity Architectural & Scaling Classes
 
 Depending on scene environments and dynamic configurations, the baseline NeRF architecture branches into specialized classes.
 
@@ -67,7 +67,7 @@ flowchart TB
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## ⚙️ 4. Production Engineering Challenges & Hardware Solutions
 
 Deploying NeRF pipelines within industrial pipelines exposes severe hardware bottlenecks and rendering compatibility issues.
 
@@ -78,7 +78,7 @@ Deploying NeRF pipelines within industrial pipelines exposes severe hardware bot
 
 ---
 
-## 5. Frontier Real-World AI Infrastructure Applications
+## 🚀 5. Frontier Real-World AI Infrastructure Applications
 
 | Application | Description | Year | Paper Link |
 |---|---|---|---|
