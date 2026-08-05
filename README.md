@@ -13,10 +13,10 @@ Prior to NeRF, 3D reconstruction relied on explicit, discrete geometric represen
 The implementation of neural view synthesis has transitioned from slow, coordinate-based continuous MLPs to hybrid sparse data structures, paving the way for explicit Gaussian rasterization primitives.
 
 ```mermaid
-graph LR
-    NeRF[Vanilla NeRF <br> Mildenhall, 2020] --> InstantNGP[Hybrid Hashing <br> Müller/NVIDIA, 2022]
-    InstantNGP --> MipNeRF[Anti-Aliasing Cones <br> Barron/Google, 2022]
-    MipNeRF --> ThreeDGS[Explicit Rasterization <br> Kerbl, 2023]
+flowchart LR
+    NeRF["Vanilla NeRF <br> Mildenhall, 2020"] --> InstantNGP["Hybrid Hashing <br> Müller/NVIDIA, 2022"]
+    InstantNGP --> MipNeRF["Anti-Aliasing Cones <br> Barron/Google, 2022"]
+    MipNeRF --> ThreeDGS["Explicit Rasterization <br> Kerbl, 2023"]
     
     style NeRF fill:#f9f,stroke:#333,stroke-width:1px
     style InstantNGP fill:#bbf,stroke:#333,stroke-width:1px
@@ -64,19 +64,13 @@ Depending on scene environments and dynamic configurations, the baseline NeRF ar
     *   *The Shift:* Standard coordinate MLPs saturate and lose fidelity when forced to map entire city blocks or complex outdoor spaces. Unbounded architectures segment large geographic layouts into independent spatial blocks. Separate, localized NeRF networks train concurrently on dedicated grid cells, dynamically blending their boundaries during inference to render city-scale environments.
 
 ```mermaid
-Neural Scene Reconstruction Scale & Performance Frontiers
-Low ┌─────────────────────────────────────────────────────────────┐
-    │ • [Vanilla NeRF (Continuous Implicit MLP)]                  │
-    │   (High quality but crippling multi-hour training footprints)│
-    │                                                             │
-PSNR│ • [Instant-NGP (Hybrid Spatial Grid Encoding)]              │
-(dB)│   (Ultra-fast 5-second training; near-instant convergence)  │
-    │                                                             │
-    │ • [3D Gaussian Splatting / Surface-Aligned Primitives]      │
-High └───────────────────────────────────────┴─────────────────────┘
-    (Explicit tile-based rasterization over traditional MLP layers)
-Low (Minutes Per Frame Rendering)          High (Real-Time 144+ FPS Serving)
-Real-Time Inference Framerate Throughput
+flowchart TB
+    A["Vanilla NeRF (Continuous Implicit MLP)<br>(High quality but crippling multi-hour training footprints)"]
+    B["Instant-NGP (Hybrid Spatial Grid Encoding)<br>(Ultra-fast 5-second training; near-instant convergence)"]
+    C["3D Gaussian Splatting / Surface-Aligned Primitives<br>(Explicit tile-based rasterization over traditional MLP layers)"]
+
+    A --> B
+    B --> C
 ```
 
 ---
