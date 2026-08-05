@@ -1,3 +1,5 @@
+![Banner](assets/banner.svg)
+
 # Awesome-Neural-Radiance-Fields
 
 ## Neural Radiance Fields: History, Progression, Variants, & Applications
